@@ -3,18 +3,6 @@
   padding: 0;
 }
 
-html,
-body {
-  margin: 0;
-  height: 100%;
-  overflow: hidden;
-}
-
-body {
-  background-size: 100%;
-  -webkit-perspective: 800;
-}
-
 li {
   list-style: none;
 }

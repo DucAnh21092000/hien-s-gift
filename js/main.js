@@ -1,7 +1,8 @@
-$(document).ready(function() {
+$(document).ready(function () {
     $('#titleWeb').text(CONFIG.titleWeb)
-    $('body').css('background-image', 'url(./images/' + CONFIG.background + ')')
 
+    $('body').css('background-image', 'url(./images/' + CONFIG.background + ')')
+    $('body').css('background-size', 'cover')
     for (let i = 1; i <= 6; i++)
         $('#min' + i).css('background-image', 'url(./images/' + CONFIG['min' + i] + ')')
 
