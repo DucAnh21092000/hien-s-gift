@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title id="titleWeb"></title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/mystyle.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="./css/index.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="./css/animation.css" class="">
+    <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Satisfy" />
+    <link rel="stylesheet" href="./css/libs/animate.css" />
+    <link rel="stylesheet" href="./css/site.css" />
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* Nút mở popup */
+        .open-btn {
+            padding: 10px 20px;
+            background-color: #e91e63;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        /* Overlay nền xám */
+        .overlay {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 10;
+        }
+
+        /* Hộp popup */
+        .popup {
+            background: white;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+            display: none;
+            z-index: 11;
+        }
+
+        .popup h2 {
+            margin-top: 0;
+        }
+
+        .popup .close-btn {
+            background-color: #ccc;
+            border: none;
+            padding: 8px 16px;
+            margin-top: 15px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .d-none {
+            display: none;
+        }
+
+        .d-block {
+            display: block;
+        }
+    </style>
+</head>
+
+<body style="width: 100%; height: 100%;">
+    <div class="popup" id="popup">
+        <h2>Này Đức Anh biết trong đầu đang nghĩ cái gì đấy nha...</h2>
+        <p>Tặng Hiền nốt món quà nữa này</p>
+        <button class="close-btn" onclick="closePopup()">Đóng</button>
+    </div>
+    <div class="root w-100 " id="mes">
+        <div class="d-flex w-100 justify-content-center flex-column align-items-center pt-5 ">
+            <div class="wow bounceInUp" data-wow-delay="2s" data-wow-duration="5s">
+                <div class="banner year"></div>
+            </div>
+            <div class="wow slideInLeft" data-wow-delay="7s" data-wow-duration="4s">
+                <div class="banner content"></div>
+            </div>
+            <div class="banner mess"></div>
+            <img class="icon text-center"></img>
+        </div>
+    </div>
+
+    <div class="box" id="boxLayout">
+        <ul class="minbox">
+            <li id="min1"></li>
+            <li id="min2"></li>
+            <li id="min3"></li>
+            <li id="min4"></li>
+            <li id="min5"></li>
+            <li id="min6"></li>
+        </ul>
+        <ol class="maxbox">
+            <li id="max1"></li>
+            <li id="max2"></li>
+            <li id="max3"></li>
+            <li id="max4"></li>
+            <li id="max5"></li>
+            <li id="max6"></li>
+        </ol>
+    </div>
+
+    <script type="text/javascript" src="./js/animation.js"> </script>
+    <script src="./config.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./dist/wow.min.js"></script>
+    <script src="./dist/wow.js"></script>
+</body>
+
+</html>
