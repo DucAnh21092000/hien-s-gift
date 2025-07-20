@@ -74,7 +74,7 @@ const displayIcon = () => {
                 clearInterval(timeOut)
                 openPopup()
             }
-        }, 100)
+        }, 2000)
     }, 600)
 }
 
