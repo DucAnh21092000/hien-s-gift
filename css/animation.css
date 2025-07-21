@@ -65,7 +65,7 @@ body {
 
 .banner {
   text-align: center;
-  font-family: "Satisfy";
+  font-family: "Merienda", cursive;
   background: linear-gradient(to right, #f8b195, #f67280, #c06c84);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
