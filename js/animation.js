@@ -31,6 +31,7 @@ let arrMessResult = []
 // Hiển thị tin nhắn muốn hiển thị
 const displayMess = () => {
     setTimeout(() => {
+
         const timeOut = setInterval(() => {
             let arrShift = arrMess.shift()
             if (arrShift == '/') {
@@ -50,7 +51,10 @@ const displayMess = () => {
 
 // Hiển thị nội dung lời chúc
 const displayContent = () => {
+    const content1 = document.getElementById('mainContent1')
+
     setTimeout(() => {
+        content1.classList.remove('slideInLeft')
         const timeOut = setInterval(() => {
             arrContentResult.push(arrContent.shift())
             content.innerHTML = arrContentResult.join("")
@@ -58,6 +62,8 @@ const displayContent = () => {
             if (arrContent.length == 0) {
                 clearInterval(timeOut)
                 displayMess()
+                content1.classList.add('pulse')
+                content1.style.animationName = 'pulse'
             }
         }, 500)
     }, 1000)
@@ -90,6 +96,9 @@ function display() {
             if (arrYear.length == 0) {
                 clearInterval(timeOut)
                 displayContent()
+                const content1 = document.getElementById('mainContent1')
+                content1.classList.add('shake')
+                content1.style.animationName = "shake"
             }
         }, 1000)
     }, 2000)

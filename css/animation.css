@@ -1,3 +1,4 @@
+@import url("http://fonts.cdnfonts.com/css/poppins");
 @keyframes changeColorYear {
   from {
     color: red;
@@ -45,7 +46,6 @@
   right: 70px;
 }
 
-@import url("http://fonts.cdnfonts.com/css/poppins");
 * {
   padding: 0;
   margin: 0;
